@@ -1,0 +1,160 @@
+body,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: smaller;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+  margin-left: auto;
+  margin-top: 1.6em;
+  margin-right: 12px;
+}
+
+nav a {
+  margin-top: 3px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+nav img {
+  height: 20px;
+}
+main {
+  width: 50%;
+  margin: 17em auto;
+  margin-top: 1px;
+  text-align: center;
+}
+
+input {
+  width: 85%;
+  padding: 1em;
+  border-radius: 30px;
+  border: 0.1px solid gray;
+}
+
+input:focus {
+  outline: none;
+}
+
+.fa-leaf {
+  color: green;
+}
+
+.input-wrapper {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+.input-wrapper:before {
+  font-family: "FontAwesome";
+  content: "\f002";
+  font-size: 14px;
+  font-weight: 100;
+  color: grey;
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  margin-right: 565px;
+}
+.input-wrapper:after {
+  font-family: "FontAwesome";
+  content: "\f130";
+  /* display: block; */
+  font-size: 20px;
+  font-weight: 100;
+  color: grey;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  margin-right: 36px;
+}
+
+.btn-com {
+  margin-top: 1em;
+}
+
+.yy {
+  background-color: rgb(29, 175, 29);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.nm {
+  padding: 5px 0 0 8px;
+  font-size: 16px;
+  color: white;
+}
+
+.btn-com button {
+  padding: 11px;
+  border: none;
+  margin: 20px;
+  background-color: whitesmoke;
+}
+
+main img {
+  height: 170px;
+  width: auto;
+  margin: 0px, 0px;
+}
+
+footer {
+  background-color: rgb(240, 236, 236);
+  margin: 0;
+  padding: 0 14px;
+}
+
+footer a {
+  text-align: center;
+  float: center;
+  color: grey;
+  font-size: 14px;
+}
+.footer-top {
+  padding: 14px;
+}
+.footer-top p {
+  color: grey;
+  font-size: 14px !important;
+}
+.footer-bottom {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+}
+
+.left a {
+  margin-right: 1em;
+  color: grey;
+  font-size: 14px;
+}
+
+.right a {
+  margin-right: 1em;
+  color: grey;
+  font-size: 14px;
+}
+
+.text a {
+  text-decoration: none;
+  color: blue;
+}
+
+.text {
+  margin: 8px;
+}
