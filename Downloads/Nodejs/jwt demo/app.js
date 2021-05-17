@@ -5,12 +5,18 @@ const jwt = require("jsonwebtoken");
 app.use(express.json());
 
 const secret = "mySecret";
-app.post("/create-token", (req, res) => {
+app.post("/sign-token", (req, res) => {
+  // mongodb+srv://aigbe_destiny:Destiny1@cluster0.7bohx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
   const payload = {
-    username: req.body.username,
+    firstname: req.body.firstname,
+    lastname: req.body.lastname,
     id: req.body.id,
   };
+  if (!payload.firstname || !payload.lastname || !payload.id) {
+    return res.status(500).json({ message: "all fields are required" });
+  }
   const expiry = 36000;
+  jwt.sign(payload, secret, { expiresIn: expiry }, () => {});
 
   jwt.sign(payload, secret, { expiresIn: expiry }, (err, token) => {
     if (err) {
